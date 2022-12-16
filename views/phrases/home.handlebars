@@ -1,0 +1,10 @@
+<section class="home">
+  <div class="container">
+    <ul>
+      {{#each phrases}}
+        <li class="phrase">"{{this.title}}"</li>
+        <li class="author">Autor: {{this.User.name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

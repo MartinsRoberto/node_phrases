@@ -1,0 +1,14 @@
+<section class="dashboard">
+  <div class="container">
+      <h3>Veja, edite ou exclua suas frases</h3>
+      <ul>
+      {{#each phrases}}
+        <li>
+          <p>{{this.title}}</p>
+          <a href="/phrases/edit/{{this.id}}">Editar</a>
+          <a href="/phrases/remove/{{this.id}}">Excluir</a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

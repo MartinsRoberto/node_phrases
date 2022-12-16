@@ -1,0 +1,106 @@
+:root{
+  --red-100: #F8D7DA;
+  --red-200: #F1AEB5;
+  --red-300: #EA868F;
+  --red-400: #E35D6A;
+  --red-500: #DC3545;
+  --red-600: #B02A37;
+  --red-700: #842029;
+  --red-800: #58151C;
+  --red-900: #2C0B0E;
+
+  --orange-100: #FFEFD0;
+  --orange-200: #FECBA1;
+  --orange-300: #FD9843;
+  --orange-400: #FD9843;
+  --orange-500: #FD7E14;
+  --orange-600: #CA6510;
+  --orange-700: #984C0C;
+  --orange-800: #653208;
+  --orange-900: #331904;
+  
+  --yellow-100: #FFF3CD;
+  --yellow-200: #FFE69C;
+  --yellow-300: #FFDA61;
+  --yellow-400: #FFCD39;
+  --yellow-500: #FFC107;
+  --yellow-600: #CC9A06;
+  --yellow-700: #997404;
+  --yellow-800: #664D03;
+  --yellow-900: #332701;
+
+  --green-100: #D1E7DD;
+  --green-200: #A3CFBB;
+  --green-300: #75B798;
+  --green-400: #479F76;
+  --green-500: #198754;
+  --green-600: #146C43;
+  --green-700: #0F5132;
+  --green-800: #0A3622;
+  --green-900: #051B11;
+
+  --teal-100: #D2F4EA;
+  --teal-200: #A6E9D5;
+  --teal-300: #79DFC1;
+  --teal-400: #4DD4AC;
+  --teal-500: #20C997;
+  --teal-600: #1AA179;
+  --teal-700: #13795B;
+  --teal-800: #0B503C;
+  --teal-900: #06281E;
+
+  --cyan-100: #CCF4FC;
+  --cyan-200: #9EEAF9;
+  --cyan-300: #6EDFF6;
+  --cyan-400: #3DD5F3;
+  --cyan-500: #0DCAF0;
+  --cyan-600: #0AA2C0;
+  --cyan-700: #087990;
+  --cyan-800: #055160;
+  --cyan-900: #032830;
+
+  --blue-100: #CFE2FF;
+  --blue-200: #9EC5FE;
+  --blue-300: #6EA8FE;
+  --blue-400: #3D8BFD;
+  --blue-500: #0D6EFD;
+  --blue-600: #0A58CA;
+  --blue-700: #084298;
+  --blue-800: #052c65;
+  --blue-900: #031633;
+  
+  --indigo-100: #E0CFFC;
+  --indigo-200: #C29FFA;
+  --indigo-300: #A370F7;
+  --indigo-400: #8540F5;
+  --indigo-500: #6610F2;
+  --indigo-600: #520DC2;
+  --indigo-700: #3D0A91;
+  --indigo-800: #290661;
+  --indigo-900: #140330;
+
+  --purple-100: #E0CFFC;
+  --purple-200: #C29FFA;
+  --purple-300: #A370F7;
+  --purple-400: #8540F5;
+  --purple-500: #6610F2;
+  --purple-600: #520DC2;
+  --purple-700: #3D0A91;
+  --purple-800: #290661;
+  --purple-900: #140330;
+
+  --gray-100: #F8F9FA;
+  --gray-200: #E9ECEF;
+  --gray-300: #DEE2E6;
+  --gray-400: #CED4DA;
+  --gray-500: #ADB5BD;
+  --gray-600: #6C757D;
+  --gray-700: #495057;
+  --gray-800: #343A40;
+  --gray-900: #212529;
+
+  --black-1: #070707;
+  --black-2: #111111;
+  --black-3: #1b1b1b;
+  --black-4: #272727;
+}

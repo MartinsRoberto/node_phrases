@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>PHRASES</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="brand">PHRASES</a>
+
+      <div class="nav">
+        {{#if session.userid}}
+        <a class="nav-link" href="/phrases/add">Criar frases</a>
+        <a class="nav-link" href="/phrases/dashboard">Suas frases</a>
+        <a class="nav-link" href="/auth/logout">Sair</a>
+        {{else}}
+        <a class="nav-link" href="/auth/login">Entrar</a>
+        <a class="nav-link" href="/auth/register">Registrar</a>
+        {{/if}}
+      </div>
+    </div>
+  </header>
+
+  <div class="message">
+    {{#if messages.message}}
+    {{messages.message}}
+    {{/if}}
+  </div>
+
+  <div class="container">
+    {{{body}}}
+  </div>
+</body>
+
+</html>

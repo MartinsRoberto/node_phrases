@@ -1,0 +1,15 @@
+<section class="edit-phrase">
+  <div class="container">
+    <h3>Editando fase</h3>
+    <form action="/phrases/edit" method="POST">
+      <input type="hidden" name="id" value="{{phrase.id}}" required>
+      <div>
+        <label for="title">Titulo:</label>
+        <input type="text" name="title" value="{{phrase.title}}" required>
+      </div>
+      <div>
+        <button type="submit" class="btn-primary">Editar frase</button>
+      </div>
+    </form>
+  </div>
+</section>
