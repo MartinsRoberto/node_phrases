@@ -141,7 +141,25 @@ input:focus{
   font-size: 14px;
   color: var(--gray-400);
 }
-
+.home .filter-text{
+  display: flex;
+  margin-bottom: 20px;
+}
+.home .filter-text input{
+  border-radius: 5px 0px 0px 5px;
+}
+.home .filter-text .btn-primary{
+  border-radius: 0px 5px 5px 0px;
+}
+.home .filter-order{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.home .search{
+  color: var(--gray-400);
+}
 .dashboard{
   margin-top: 50px;
 }

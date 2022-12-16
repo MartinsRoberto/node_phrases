@@ -1,5 +1,39 @@
 <section class="home">
   <div class="container">
+
+    <form action="/" method="GET" class="filter-text">
+      <input type="text" name="search" placeholder="filtro">
+      <button type="submit" class="btn-primary">Procurar</button>
+    </form>
+
+    <div class="filter-order">
+      <form action="/" method="GET">
+        <input type="hidden" name="search" value="{{this.search}}">
+        <input type="hidden" name="order" value="new">
+        <button type="submit" class="btn-primary">Novos</button>
+      </form>
+
+      <form action="/" method="GET">
+        <input type="hidden" name="search" value="{{this.search}}">
+        <input type="hidden" name="order" value="old">
+        <button type="submit" class="btn-primary">Antigos</button>
+      </form>
+    </div>
+    
+
+    <div class="search">
+      {{#if search}}
+        {{#if phrasesQty}}
+          <p>Quantidade de frases filtradas: {{phrasesQty}}</p>
+          <p>Filtro: {{search}}</p>
+        {{else}}
+          <p>Não foi encontradado nenhum resultado para: {{search}}</p>
+        {{/if}}
+      {{/if}}
+
+    </div>
+
+
     <ul>
       {{#each phrases}}
       <li>

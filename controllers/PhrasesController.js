@@ -1,13 +1,42 @@
 const User = require('../model/User')
 const Phrase = require('../model/Phrase')
+const { Op } = require('sequelize')
+
 module.exports = class PhrasesController{
 
   static async allPhrases(req, res){
-    const phrasesData = await Phrase.findAll({ include: User})
+    let search = ''
+
+    if(req.query.search){
+      search = req.query.search
+    }
+
+    let order = 'DESC'
+
+    if(req.query.order === 'old'){
+      order = 'ASC'
+    }
+    else{
+      order = 'DESC'
+    }
+
+    const phrasesData = await Phrase.findAll({ 
+      include: User,
+      where: {
+        title: {[Op.like]: `%${search}%`}
+      },
+      order: [['createdAt', order]]
+    })
 
     const phrases = phrasesData.map( data => data.get({plain: true}))
 
-    res.render('phrases/home', { phrases })
+    let phrasesQty = phrases.length
+
+    if(phrasesQty === 0){
+      phrasesQty = false
+    }
+
+    res.render('phrases/home', { phrases, search, phrasesQty })
   }
 
   static add(req, res){
