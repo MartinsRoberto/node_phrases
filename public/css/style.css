@@ -29,7 +29,7 @@ a{
   transition: .3s;
 }
 a:hover{
-  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .container{
@@ -128,8 +128,10 @@ input:focus{
 .home{
   margin-top: 50px;
 }
+
 .home li{
-  margin-bottom: 20px;
+  border-bottom: 1px solid #f7f7f728;
+  padding: 25px 0px;
 }
 .home .phrase{
   font-size: 24px;
@@ -143,11 +145,12 @@ input:focus{
 .dashboard{
   margin-top: 50px;
 }
-.dashboard p{
+.dashboard .phrase{
   margin-bottom: 10px;
 }
 .dashboard li{
-  margin-bottom: 20px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #f7f7f728;
 }
 .dashboard a:hover{
   text-decoration: underline;
