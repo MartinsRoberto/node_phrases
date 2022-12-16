@@ -15,6 +15,11 @@
   <header class="header">
     <div class="container">
       <a href="/" class="brand">PHRASES</a>
+      <button class="btn-mobile">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </button>
 
       <div class="nav">
         {{#if session.userid}}
@@ -38,6 +43,8 @@
   <div class="container">
     {{{body}}}
   </div>
+
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
