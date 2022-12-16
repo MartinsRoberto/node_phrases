@@ -219,7 +219,7 @@ input:focus{
 /* FOOTER */
 
 
-button{
+.btn-mobile{
   display: none;
 }
 @media (max-width: 600px) {
